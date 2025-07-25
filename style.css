@@ -1,0 +1,78 @@
+body {
+    background-color: #f0f2f5; 
+    font-family: 'Orbitron', sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 360px; /* Max width for the calculator */
+    background: #ffffff; /* White background */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    border: 1px solid #dee2e6;
+}
+
+#display {
+    width: 100%;
+    height: 80px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    border: none;
+    text-align: right;
+    padding: 20px;
+    font-size: 2.5rem; 
+    color: #343a40;
+    margin-bottom: 20px;
+    overflow-x: auto; 
+}
+
+/* Style for the calculator buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; /* Space between buttons */
+}
+
+.btn {
+    height: 60px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Specific button styles */
+.btn-light {
+    background-color: #f8f9fa;
+}
+
+.btn-info {
+    background-color: #0dcaf0;
+    color: white;
+}
+
+.btn-warning {
+     background-color: #ffc107;
+     color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-success {
+    background-color: #198754;
+    color: white;
+}
